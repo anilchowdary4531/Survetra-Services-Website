@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: survetra-backend
+  profiles:
+    active: dev
+  jackson:
+    serialization:
+      indent-output: true
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: method
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+survetra:
+  jwt:
+    secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+    expiration-ms: 86400000 # 24 hours
+  cors:
+    allowed-origins: "http://localhost:3000,http://localhost:3001,https://survetra.com"
+  admin:
+    initial-email: "admin@survetra.com"
+    initial-password: "SurvetraAdmin@2026"
+

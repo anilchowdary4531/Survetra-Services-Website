@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: survetra-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-survetra_db}
+      POSTGRES_USER: ${POSTGRES_USER:-survetra_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-replace_with_secure_db_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-survetra_user} -d ${POSTGRES_DB:-survetra_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - survetra-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: survetra-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SERVER_PORT: 8080
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: ${POSTGRES_DB:-survetra_db}
+      DB_USER: ${POSTGRES_USER:-survetra_user}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-replace_with_secure_db_password}
+      JWT_SECRET: ${JWT_SECRET:-replace_with_64_character_hex_secret_key_for_production_jwt_signing}
+      JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-86400000}
+      ADMIN_DEFAULT_EMAIL: ${ADMIN_DEFAULT_EMAIL:-admin@survetra.com}
+      ADMIN_DEFAULT_PASSWORD: ${ADMIN_DEFAULT_PASSWORD:-replace_with_secure_admin_password}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:3000,http://localhost:80,https://survetra.com,https://www.survetra.com}
+      AWS_S3_BUCKET: ${AWS_S3_BUCKET:-survetra-production-media}
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+    ports:
+      - "8080:8080"
+    networks:
+      - survetra-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: survetra-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080/api/v1}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://survetra.com}
+    ports:
+      - "3000:3000"
+    networks:
+      - survetra-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: survetra-nginx
+    restart: unless-stopped
+    depends_on:
+      - frontend
+      - backend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - survetra-network
+
+networks:
+  survetra-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
