@@ -15,9 +15,15 @@ import {
   Article,
 } from "./data";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api/v1";
+const isVercel = process.env.VERCEL === "1";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || (isVercel ? "" : "http://localhost:8080/api/v1");
 
 async function fetchFromBackend<T>(endpoint: string, options?: RequestInit): Promise<T | null> {
+  if (!API_BASE) {
+    // When running on Vercel without an external backend URL configured,
+    // immediately use the verified fallback data layer.
+    return null;
+  }
   try {
     const res = await fetch(`${API_BASE}${endpoint}`, {
       ...options,
@@ -25,7 +31,7 @@ async function fetchFromBackend<T>(endpoint: string, options?: RequestInit): Pro
         "Content-Type": "application/json",
         ...(options?.headers || {}),
       },
-      next: { revalidate: 30 },
+      next: { revalidate: 60 },
     });
     if (!res.ok) return null;
     return await res.json();

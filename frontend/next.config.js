@@ -2,18 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.unsplash.com", "assets.survetra.com", "localhost"],
-    unoptimized: true,
-  },
-  async rewrites() {
-    return [
+    remotePatterns: [
       {
-        source: "/api/proxy/:path*",
-        destination: "http://localhost:8080/api/v1/:path*",
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
-    ];
+      {
+        protocol: "https",
+        hostname: "assets.survetra.com",
+      },
+    ],
+    unoptimized: true,
   },
 };
 
 module.exports = nextConfig;
-
