@@ -114,7 +114,7 @@ export default async function IndustriesPage() {
                 <div className={`p-6 sm:p-8 rounded-2xl bg-[#1D2132] border border-white/[0.08] space-y-6 ${isEven ? "lg:col-span-5" : "lg:col-span-5 lg:order-1"}`}>
                   <div className="flex items-center gap-2 text-survetra-orange text-xs font-semibold uppercase tracking-wider">
                     <TrendingUp className="w-4 h-4" />
-                    Quantified Industry Impact
+                    Architectural Capabilities & Focus
                   </div>
 
                   <div className="space-y-4">

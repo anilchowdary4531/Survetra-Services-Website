@@ -99,7 +99,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </h1>
                   <span
                     className={`px-3 py-1 rounded-full text-xs font-semibold border ${
-                      product.status === "Production"
+                      product.status === "Active" || product.status === "Production"
                         ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
                         : product.status === "Beta"
                         ? "bg-purple-500/10 text-purple-400 border-purple-500/20"
@@ -140,7 +140,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   href={`/case-studies/${relatedCaseStudy.slug}`}
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-300 bg-white/[0.05] border border-white/10 hover:text-white hover:bg-white/[0.08] transition-all"
                 >
-                  Read Case Study
+                  Explore Architecture
                   <ArrowUpRight className="w-4 h-4 text-survetra-orange" />
                 </Link>
               )}
@@ -152,7 +152,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             <div className="lg:col-span-4 p-8 rounded-3xl bg-[#161926] border border-white/[0.08] space-y-6">
               <div className="flex items-center gap-2 text-xs font-semibold text-white uppercase tracking-wider">
                 <Activity className="w-4 h-4 text-emerald-400" />
-                Verified Production Metrics
+                Technical Specifications
               </div>
 
               <div className="space-y-4">
@@ -233,12 +233,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {relatedCaseStudy && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <span className="text-xs font-semibold text-survetra-orange uppercase tracking-wider">
-            Verified Deployment Outcome
+            Architecture Blueprint & Implementation
           </span>
           <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#161926] to-[#1D2132] border border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="space-y-3 max-w-2xl">
               <span className="text-xs text-slate-400 uppercase tracking-wider font-semibold">
-                Customer Story: {relatedCaseStudy.clientName}
+                Solution Pattern: {relatedCaseStudy.industry}
               </span>
               <h3 className="text-xl sm:text-2xl font-display font-bold text-white">
                 {relatedCaseStudy.title}
@@ -251,7 +251,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               href={`/case-studies/${relatedCaseStudy.slug}`}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-xs text-white bg-survetra-orange hover:bg-survetra-orange-hover whitespace-nowrap transition-colors"
             >
-              Read Full Case Study
+              Explore Technical Solution
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

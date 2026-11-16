@@ -32,8 +32,8 @@ export default function AdminCaseStudiesPage() {
                 industry: "Enterprise Solutions",
                 challenge: "Summary of operational constraints...",
                 solution: "Architectural deployment details...",
-                results: ["Improved efficiency by 40%"],
-                metrics: [{ label: "Uptime", value: "99.99%" }],
+                results: ["Improved operational synchronization"],
+                metrics: [{ label: "Architecture", value: "Modular" }],
                 technologiesUsed: ["Spring Boot", "Next.js"],
                 coverGradient: "from-blue-600/20 via-indigo-900/10 to-transparent"
               };

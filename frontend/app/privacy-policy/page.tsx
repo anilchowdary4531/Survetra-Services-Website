@@ -77,8 +77,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="p-4 rounded-xl bg-white/[0.03] text-xs font-mono text-slate-300">
               Survetra Services Private Limited<br />
-              Attn: Data Privacy Officer<br />
-              Email: privacy@survetra.com<br />
+              Attn: Corporate Privacy & Data Protection<br />
+              Email: sureshbabu@survetra.com<br />
               Bengaluru, Karnataka, India
             </div>
           </div>

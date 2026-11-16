@@ -33,7 +33,7 @@ export default function AdminAuditLogsPage() {
       entityType: "ENQUIRY",
       entityId: "enq-101",
       ipAddress: "103.21.244.0",
-      details: "Inbound business inquiry from Apex Hospitality Group",
+      details: "Inbound business inquiry from Hospitality Enterprise",
       timestamp: "Today at 2:30:15 PM",
     },
     {
@@ -49,7 +49,7 @@ export default function AdminAuditLogsPage() {
     {
       id: "log-4",
       action: "ARTICLE_PUBLISHED",
-      userEmail: "sarah.j@survetra.com",
+      userEmail: "editorial@survetra.com",
       entityType: "ARTICLE",
       entityId: "art-1",
       ipAddress: "103.22.200.5",

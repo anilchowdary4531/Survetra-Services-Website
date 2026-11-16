@@ -32,20 +32,22 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-survetra-orange flex-shrink-0" />
-                <a href="mailto:contact@survetra.com" className="hover:text-white transition-colors">
-                  contact@survetra.com
+                <a href="mailto:sureshbabu@survetra.com" className="hover:text-white transition-colors">
+                  sureshbabu@survetra.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-survetra-orange flex-shrink-0" />
-                <span>+91 (80) 4120-8900</span>
+                <a href="tel:+91777764632" className="hover:text-white transition-colors">
+                  +91 77776 4632
+                </a>
               </div>
             </div>
 
             {/* System Status indicator */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-400">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>All Systems Operational (99.98% Uptime)</span>
+              <span>All Systems Operational</span>
             </div>
           </div>
 
@@ -143,7 +145,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/case-studies" className="text-slate-400 hover:text-white transition-colors">
-                  Client Case Studies
+                  Case Studies & Architecture
                 </Link>
               </li>
               <li>

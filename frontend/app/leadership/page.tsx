@@ -30,7 +30,7 @@ export default async function LeadershipPage() {
 
       {/* Team Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
           {team.map((member) => (
             <div
               key={member.id}

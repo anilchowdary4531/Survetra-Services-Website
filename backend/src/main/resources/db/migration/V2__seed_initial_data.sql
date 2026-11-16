@@ -22,11 +22,11 @@ INSERT INTO products (id, slug, name, tagline, category, short_description, full
     'Restaurant & Commerce Technology',
     'A unified enterprise platform powering restaurant operations, dynamic ordering, kitchen workflow automation, multi-tier supply chain, and integrated digital wallets.',
     'Tiffzy is Survetra''s flagship enterprise restaurant ecosystem, engineered to solve the complex operational challenges of modern food service providers, cloud kitchens, and multi-location franchises.',
-    'Production',
+    'Active',
     'Enterprise Suite',
     '[{"title": "Comprehensive Restaurant Management", "description": "Multi-outlet administration, table routing, and live analytics."}, {"title": "Omnichannel Customer Ordering", "description": "Contactless QR ordering, consumer mobile web app, and real-time tracking."}, {"title": "Integrated Supply Chain", "description": "Automated ingredient depletion and supplier replenishment."}]'::jsonb,
     '["Next.js", "React Native", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes"]'::jsonb,
-    '[{"label": "Orders Processed", "value": "2.5M+"}, {"label": "Uptime Reliability", "value": "99.98%"}, {"label": "Kitchen Ticket Prep Reduction", "value": "32%"}]'::jsonb
+    '[{"label": "Order Ingestion", "value": "Real-Time"}, {"label": "Station Routing", "value": "Automated KDS"}, {"label": "Architecture", "value": "Cloud-Native"}]'::jsonb
 ),
 (
     '22222222-2222-2222-2222-222222222222',
@@ -38,9 +38,9 @@ INSERT INTO products (id, slug, name, tagline, category, short_description, full
     'SocialSea is Survetra''s modern social platform designed to redefine authentic digital connections. Built upon a distributed event-driven microservices architecture.',
     'Beta',
     'Consumer Platform',
-    '[{"title": "Adaptive Algorithmic Feed", "description": "Vector graph recommendations for relevant, engaging feeds."}, {"title": "Ultra-Low-Latency Videos", "description": "Adaptive HLS/DASH video streaming under 280ms start times."}, {"title": "Encrypted Real-Time Messaging", "description": "WebSocket and WebRTC direct messaging."}]'::jsonb,
+    '[{"title": "Adaptive Algorithmic Feed", "description": "Vector graph recommendations for relevant, engaging feeds."}, {"title": "Adaptive Short Videos", "description": "Adaptive HLS/DASH video streaming."}, {"title": "Encrypted Real-Time Messaging", "description": "WebSocket and WebRTC direct messaging."}]'::jsonb,
     '["Next.js", "React Native", "Go", "Spring Boot", "Cassandra", "PostgreSQL", "AWS S3", "WebRTC"]'::jsonb,
-    '[{"label": "Peak Message Throughput", "value": "45K msg/sec"}, {"label": "P99 Feed Latency", "value": "< 42ms"}, {"label": "Active Beta Communities", "value": "1,200+"}]'::jsonb
+    '[{"label": "Feed Engine", "value": "Graph-Based"}, {"label": "Media Pipeline", "value": "Adaptive HLS"}, {"label": "Messaging", "value": "WebRTC / WSS"}]'::jsonb
 ),
 (
     '22222222-2222-2222-2222-222222222223',
@@ -54,7 +54,7 @@ INSERT INTO products (id, slug, name, tagline, category, short_description, full
     'Next Initiative',
     '[{"title": "Deterministic Multi-Agent Coordination", "description": "Autonomous task decomposition with verification steps."}, {"title": "Enterprise Secure RAG", "description": "Document ingestion with hybrid vector search."}]'::jsonb,
     '["Python", "Java 17", "LangGraph", "pgvector", "Spring AI", "Docker"]'::jsonb,
-    '[{"label": "Target Accuracy", "value": "99.4%"}, {"label": "Supported Connectors", "value": "40+ APIs"}]'::jsonb
+    '[{"label": "Reasoning Engine", "value": "Hybrid Vector"}, {"label": "Tool Execution", "value": "Deterministic"}]'::jsonb
 )
 ON CONFLICT (id) DO NOTHING;
 
@@ -62,8 +62,8 @@ ON CONFLICT (id) DO NOTHING;
 INSERT INTO site_settings (id, setting_key, setting_value, category, description) VALUES
     ('33333333-3333-3333-3333-333333333331', 'company_name', 'Survetra Services', 'GENERAL', 'Brand display name'),
     ('33333333-3333-3333-3333-333333333332', 'company_tagline', 'Engineering the Future. Building What Matters.', 'GENERAL', 'Corporate brand tagline'),
-    ('33333333-3333-3333-3333-333333333333', 'contact_email', 'contact@survetra.com', 'CONTACT', 'Inbound inquiries destination'),
-    ('33333333-3333-3333-3333-333333333334', 'contact_phone', '+91 (80) 4120-8900', 'CONTACT', 'Headquarters corporate line'),
+    ('33333333-3333-3333-3333-333333333333', 'contact_email', 'sureshbabu@survetra.com', 'CONTACT', 'Inbound inquiries destination'),
+    ('33333333-3333-3333-3333-333333333334', 'contact_phone', '+91 77776 4632', 'CONTACT', 'Headquarters corporate line'),
     ('33333333-3333-3333-3333-333333333335', 'headquarters_location', 'Bengaluru, Karnataka, India', 'CONTACT', 'Primary physical operating office')
 ON CONFLICT (id) DO NOTHING;
 

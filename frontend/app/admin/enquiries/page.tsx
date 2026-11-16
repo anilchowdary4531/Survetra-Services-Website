@@ -20,13 +20,13 @@ export default function AdminEnquiriesPage() {
   const [enquiries, setEnquiries] = useState<EnquiryItem[]>([
     {
       id: "enq-101",
-      fullName: "Karan Mehta",
-      businessEmail: "karan.m@apexculinary.com",
+      fullName: "Inbound Inquiry",
+      businessEmail: "inquiry@hospitality-group.com",
       phone: "+91 98450 11223",
-      company: "Apex Culinary Group",
+      company: "Hospitality Enterprises",
       category: "PRODUCT_INQUIRY",
-      subject: "Tiffzy Enterprise Rollout across 40 new kitchen hubs",
-      message: "We are expanding our dark kitchen operations into North India and require multi-tenant kitchen display routing with automated inventory depletion.",
+      subject: "Tiffzy Architecture Inquiry",
+      message: "Inquiring about multi-tenant kitchen display routing with automated inventory depletion.",
       status: "NEW",
       receivedAt: "Today at 2:30 PM",
     },

@@ -60,7 +60,7 @@ export default function ContactForm() {
       if (res && res.success) {
         setSuccess(true);
       } else {
-        setError("Unable to transmit message. Please try again or email us directly at contact@survetra.com.");
+        setError("Unable to transmit message. Please try again or email us directly at sureshbabu@survetra.com.");
       }
     } catch {
       setError("A network error occurred. Please try again.");
@@ -124,7 +124,7 @@ export default function ContactForm() {
             required
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-            placeholder="e.g. Vikramaditya Sharma"
+            placeholder="e.g. Rahul Sharma"
             className="w-full px-4 py-3 rounded-xl bg-[#10121C] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-survetra-orange transition-colors"
           />
         </div>

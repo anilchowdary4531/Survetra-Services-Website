@@ -164,11 +164,11 @@ These endpoints power the public corporate website. They are cached at the edge 
 ```json
 {
   "jobOpeningId": "33333333-3333-3333-3333-333333333331",
-  "applicantName": "Elena Rostova",
-  "email": "elena.rostova@techmail.io",
-  "phone": "+1 415 892 4432",
-  "resumeUrl": "https://assets.survetra.com/resumes/elena_rostova_staff_engineer.pdf",
-  "coverLetter": "10 years building distributed high-throughput consensus systems and real-time streaming engines."
+  "applicantName": "Candidate Applicant",
+  "email": "candidate@example.com",
+  "phone": "+91 98765 43210",
+  "resumeUrl": "https://assets.survetra.com/resumes/applicant_cv.pdf",
+  "coverLetter": "Extensive experience building distributed high-throughput consensus systems and real-time streaming engines."
 }
 ```
 

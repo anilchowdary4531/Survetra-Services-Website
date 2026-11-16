@@ -17,7 +17,7 @@ export default function AdminProjectsPage() {
     {
       id: "proj-1",
       title: "Omnichannel POS & Kitchen Display Engine",
-      client: "Apex Culinary Group",
+      client: "Enterprise Hospitality Group",
       category: "Restaurant Tech",
       status: "Completed",
       completionDate: "Sept 2026",
@@ -25,7 +25,7 @@ export default function AdminProjectsPage() {
     {
       id: "proj-2",
       title: "Real-Time Graph Streaming Mesh",
-      client: "SocialSea Network",
+      client: "Digital Media Group",
       category: "Social Platforms",
       status: "In Delivery",
       completionDate: "Nov 2026",
@@ -33,7 +33,7 @@ export default function AdminProjectsPage() {
     {
       id: "proj-3",
       title: "Core Banking Strangler Migration",
-      client: "Horizon Capital",
+      client: "Financial Services Group",
       category: "FinTech",
       status: "Completed",
       completionDate: "June 2026",

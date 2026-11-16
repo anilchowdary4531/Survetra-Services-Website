@@ -63,7 +63,7 @@ export default function CareerApplicationForm({
       if (res && res.success) {
         setSuccess(true);
       } else {
-        setError("Unable to submit at this time. Please try again or email careers@survetra.com.");
+        setError("Unable to submit at this time. Please try again or email us directly at sureshbabu@survetra.com.");
       }
     } catch {
       setError("An unexpected network error occurred. Please try again.");

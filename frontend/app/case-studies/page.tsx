@@ -17,13 +17,13 @@ export default async function CaseStudiesPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-survetra-orange uppercase tracking-wider">
-            Verified Engineering Impact
+            Architecture Blueprints & Patterns
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-white tracking-tight leading-tight">
-            Proof of performance in mission-critical environments.
+            Proof of engineering rigor in complex environments.
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-            We measure our success by hard production metrics: sub-second latency, reduced food shrinkage, zero-downtime migrations, and uncompromised uptime.
+            Explore our engineering blueprints, event-driven topologies, distributed database patterns, and cloud modernization strategies.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default async function CaseStudiesPage() {
                   </span>
                   <span className="text-slate-500">•</span>
                   <span className="text-xs text-slate-400 font-mono">
-                    Client: {study.clientName}
+                    {study.clientName}
                   </span>
                 </div>
 
@@ -66,7 +66,7 @@ export default async function CaseStudiesPage() {
                 {/* Key Results */}
                 <div className="space-y-2 pt-2">
                   <span className="text-xs font-semibold text-white uppercase tracking-wider">
-                    Quantified Outcomes:
+                    Technical Deliverables & Outcomes:
                   </span>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {study.results.map((res, i) => (
@@ -94,7 +94,7 @@ export default async function CaseStudiesPage() {
                 <div className="p-6 rounded-2xl bg-[#1D2132] border border-white/[0.08] space-y-4">
                   <div className="flex items-center gap-2 text-xs font-semibold text-white uppercase tracking-wider">
                     <TrendingUp className="w-4 h-4 text-emerald-400" />
-                    Key Verified Metrics
+                    Architectural Specifications
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     {study.metrics.map((m, idx) => (

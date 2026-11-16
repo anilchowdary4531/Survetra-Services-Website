@@ -32,8 +32,8 @@ export default function AdminInsightsPage() {
                 category: "Engineering",
                 readTime: "5 min read",
                 publishedDate: "November 2026",
-                authorName: "Vikramaditya Sharma",
-                authorRole: "Chief Executive Officer & Founder",
+                authorName: "Survetra Architecture Group",
+                authorRole: "Systems Engineering",
                 tags: ["Architecture", "Engineering"],
                 content: "Detailed technical article content...",
               };

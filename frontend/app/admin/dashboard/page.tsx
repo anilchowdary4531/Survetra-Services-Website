@@ -40,7 +40,7 @@ export default function AdminDashboardPage() {
     {
       action: "Product Status Updated",
       entity: "SocialSea v0.9 Beta Stream Pipeline",
-      user: "Vikramaditya Sharma",
+      user: "Suresh Babu",
       time: "1 hour ago",
       type: "product",
     },
@@ -54,7 +54,7 @@ export default function AdminDashboardPage() {
     {
       action: "Technical Insight Published",
       entity: "Engineering Sub-Second Kitchen Ticket Routing",
-      user: "Sarah Jenkins",
+      user: "Editorial Team",
       time: "Yesterday at 4:15 PM",
       type: "article",
     },
@@ -155,8 +155,8 @@ export default function AdminDashboardPage() {
               <Activity className="w-4 h-4" />
             </div>
           </div>
-          <div className="text-3xl font-display font-extrabold text-white">
-            99.98%
+          <div className="text-2xl font-display font-extrabold text-white">
+            Operational
           </div>
           <div className="text-[11px] text-emerald-400 flex items-center gap-1">
             <CheckCircle2 className="w-3 h-3" />

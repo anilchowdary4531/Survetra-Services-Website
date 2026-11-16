@@ -61,10 +61,9 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-survetra-orange flex-shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white block font-medium">Bengaluru Office</strong>
+                    <strong className="text-white block font-medium">Headquarters</strong>
                     <span>Survetra Services Private Limited</span><br />
-                    <span>Tech Corridor, Outer Ring Road</span><br />
-                    <span>Bengaluru, Karnataka 560103, India</span>
+                    <span>Bengaluru, Karnataka, India</span>
                   </div>
                 </div>
 
@@ -72,8 +71,8 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-survetra-orange flex-shrink-0" />
                   <div>
                     <strong className="text-white block font-medium">Email Inquiries</strong>
-                    <a href="mailto:contact@survetra.com" className="text-slate-300 hover:text-white transition-colors">
-                      contact@survetra.com
+                    <a href="mailto:sureshbabu@survetra.com" className="text-slate-300 hover:text-white transition-colors">
+                      sureshbabu@survetra.com
                     </a>
                   </div>
                 </div>
@@ -82,7 +81,9 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 text-survetra-orange flex-shrink-0" />
                   <div>
                     <strong className="text-white block font-medium">Direct Telephone</strong>
-                    <span>+91 (80) 4120-8900</span>
+                    <a href="tel:+91777764632" className="text-slate-300 hover:text-white transition-colors">
+                      +91 77776 4632
+                    </a>
                   </div>
                 </div>
 

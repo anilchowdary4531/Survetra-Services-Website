@@ -62,7 +62,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             </span>
             <span className="text-slate-500">•</span>
             <span className="text-xs text-slate-400 font-mono">
-              Client: {study.clientName}
+              {study.clientName}
             </span>
           </div>
 
@@ -117,7 +117,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
 
             <div className="space-y-6">
               <h2 className="text-2xl font-display font-bold text-white tracking-tight">
-                Quantified Production Results
+                Technical Deliverables & Architectural Outcomes
               </h2>
               <div className="space-y-3">
                 {study.results.map((res, i) => (

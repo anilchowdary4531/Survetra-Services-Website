@@ -92,7 +92,7 @@ export default async function ProductsPage() {
 
                     <span
                       className={`px-3 py-1 rounded-full text-xs font-semibold border ${
-                        product.status === "Production"
+                        product.status === "Active" || product.status === "Production"
                           ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
                           : product.status === "Beta"
                           ? "bg-purple-500/10 text-purple-400 border-purple-500/20"
@@ -162,7 +162,7 @@ export default async function ProductsPage() {
                         href={`/case-studies/${product.relatedCaseStudySlug}`}
                         className="text-xs text-slate-400 hover:text-white transition-colors underline underline-offset-4"
                       >
-                        Read Deployment Case Study
+                        Explore Technical Architecture
                       </Link>
                     )}
                   </div>
@@ -175,7 +175,7 @@ export default async function ProductsPage() {
                     <div className="p-6 rounded-2xl bg-[#1D2132] border border-white/[0.08] space-y-4">
                       <div className="flex items-center gap-2 text-xs font-semibold text-white uppercase tracking-wider">
                         <Activity className="w-4 h-4 text-emerald-400" />
-                        Verified Operational Benchmarks
+                        Technical Specifications
                       </div>
                       <div className="grid grid-cols-2 gap-4">
                         {product.metrics.map((m, idx) => (

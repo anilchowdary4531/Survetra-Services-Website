@@ -48,8 +48,8 @@ export default function AdminLoginPage() {
       setAdminSession({
         id: "usr-superadmin-01",
         email: "admin@survetra.com",
-        firstName: "Vikramaditya",
-        lastName: "Sharma",
+        firstName: "Suresh",
+        lastName: "Babu",
         role: "SUPER_ADMIN",
       });
       router.push("/admin/dashboard");

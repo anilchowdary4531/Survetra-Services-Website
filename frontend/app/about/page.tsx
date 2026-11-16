@@ -117,26 +117,26 @@ export default function AboutPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-[#161926] border border-white/[0.08] space-y-2">
-              <div className="text-3xl font-display font-extrabold text-emerald-400">
-                2.5M+
+              <div className="text-2xl sm:text-3xl font-display font-extrabold text-emerald-400">
+                Cloud-Native
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-400 font-semibold">
-                High-Volume Transactions
+                Modular Architecture
               </div>
               <p className="text-xs text-slate-400">
-                Battle-tested microservices handling high-frequency production loads.
+                Modern microservices built on Spring Boot, Next.js, and container orchestration.
               </p>
             </div>
 
             <div className="p-6 rounded-2xl bg-[#161926] border border-white/[0.08] space-y-2">
-              <div className="text-3xl font-display font-extrabold text-amber-400">
-                99.98%
+              <div className="text-2xl sm:text-3xl font-display font-extrabold text-amber-400">
+                Security-First
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-400 font-semibold">
-                Uptime Reliability
+                Enterprise Standards
               </div>
               <p className="text-xs text-slate-400">
-                Zero single points of failure across all distributed production deployments.
+                Strict data isolation, role-based access control, and defensible security engineering.
               </p>
             </div>
           </div>

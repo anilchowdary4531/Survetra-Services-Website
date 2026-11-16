@@ -97,9 +97,9 @@ graph LR
 - Define hero imagery, executive problem statements, and key ROI metrics.
 
 ### Module 6: Case Studies Management (`/admin/case-studies`)
-- Document high-impact digital transformations.
-- Manage structured sections: **Challenge**, **Engineering Solution**, and **Measurable Results**.
-- Attach client branding, industry classification, and quantitative metrics (e.g. *"+40% Operational Throughput"*, *"99.995% Availability"*).
+- Document high-impact digital transformations and technical architecture blueprints.
+- Manage structured sections: **Challenge**, **Engineering Solution**, and **Technical Outcomes**.
+- Attach solution architecture patterns, industry classification, and technical specifications.
 
 ### Module 7: Leadership & Governance (`/admin/leadership`)
 - Manage executive board and senior engineering leadership.
@@ -140,9 +140,9 @@ graph LR
 ### Module 15: Website & System Settings (`/admin/settings`)
 - Global configuration parameters:
   - Official corporate entity name: **Survetra Services Private Limited**
-  - Primary contact emails: `contact@survetra.com`, `careers@survetra.com`
+  - Primary contact: `sureshbabu@survetra.com`, Phone: `+91 77776 4632`
   - Global corporate headquarters address
-  - Live system SLA uptime display percentage (e.g., `99.98%`)
+  - Live system status display (e.g., `All Systems Operational`)
   - Maintenance mode toggle
 
 ### Module 16: User & RBAC Management (`/admin/users`)

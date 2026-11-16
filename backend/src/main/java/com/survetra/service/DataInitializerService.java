@@ -58,8 +58,8 @@ public class DataInitializerService implements CommandLineRunner {
             User admin = new User(
                     initialAdminEmail,
                     passwordEncoder.encode(initialAdminPassword),
-                    "Vikramaditya",
-                    "Sharma"
+                    "Suresh",
+                    "Babu"
             );
             admin.setRoles(Set.of(superAdminRole));
             userRepository.save(admin);
@@ -75,10 +75,10 @@ public class DataInitializerService implements CommandLineRunner {
             tiffzy.setCategory("Restaurant & Commerce Technology");
             tiffzy.setShortDescription("A unified enterprise platform powering restaurant operations, dynamic ordering, kitchen workflow automation, multi-tier supply chain, and integrated digital wallets.");
             tiffzy.setFullDescription("Tiffzy is Survetra's flagship enterprise restaurant ecosystem, engineered to solve the complex operational challenges of modern food service providers, cloud kitchens, and multi-location franchises.");
-            tiffzy.setStatus("Production");
+            tiffzy.setStatus("Active");
             tiffzy.setBadge("Enterprise Suite");
             tiffzy.setTechStack("[\"Next.js\", \"Spring Boot\", \"PostgreSQL\", \"Kafka\", \"Redis\"]");
-            tiffzy.setMetrics("[{\"label\": \"Orders Handled\", \"value\": \"2.5M+\"}, {\"label\": \"Platform Uptime\", \"value\": \"99.98%\"}]");
+            tiffzy.setMetrics("[{\"label\": \"Order Ingestion\", \"value\": \"Real-Time\"}, {\"label\": \"Architecture\", \"value\": \"Cloud-Native\"}]");
             productRepository.save(tiffzy);
 
             Product socialSea = new Product();
@@ -91,7 +91,7 @@ public class DataInitializerService implements CommandLineRunner {
             socialSea.setStatus("Beta");
             socialSea.setBadge("Consumer Platform");
             socialSea.setTechStack("[\"Next.js\", \"Go\", \"Spring Boot\", \"Cassandra\", \"WebRTC\"]");
-            socialSea.setMetrics("[{\"label\": \"Message Throughput\", \"value\": \"45K msg/sec\"}, {\"label\": \"P99 Latency\", \"value\": \"< 42ms\"}]");
+            socialSea.setMetrics("[{\"label\": \"Feed Engine\", \"value\": \"Graph-Based\"}, {\"label\": \"Media Delivery\", \"value\": \"Adaptive HLS\"}]");
             productRepository.save(socialSea);
 
             log.info("Initialized default products portfolio.");

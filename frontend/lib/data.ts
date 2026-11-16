@@ -110,8 +110,8 @@ export const PRODUCTS_DATA: Product[] = [
     tagline: "End-to-End Restaurant Technology & Food Service Management Ecosystem",
     category: "Restaurant & Commerce Technology",
     shortDescription: "A unified enterprise platform powering restaurant operations, dynamic ordering, kitchen workflow automation, multi-tier supply chain, and integrated digital wallets.",
-    fullDescription: "Tiffzy is Survetra's flagship enterprise restaurant ecosystem, engineered to solve the complex operational challenges of modern food service providers, cloud kitchens, and multi-location franchises. The platform consolidates high-frequency tabletop ordering, intelligent kitchen display routing (KDS), automated inventory tracking, real-time supplier replenishment, and proprietary payment settlement into a single, cohesive cloud ecosystem.",
-    status: "Production",
+    fullDescription: "Tiffzy is Survetra's flagship enterprise restaurant ecosystem, engineered to solve the complex operational challenges of modern food service providers, cloud kitchens, and multi-location franchises. The platform consolidates tabletop ordering, intelligent kitchen display routing (KDS), automated inventory tracking, real-time supplier replenishment, and digital payment settlement into a single, cohesive cloud ecosystem.",
+    status: "Active",
     badge: "Enterprise Suite",
     features: [
       {
@@ -141,10 +141,10 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     techStack: ["Next.js", "React Native", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes"],
     metrics: [
-      { label: "Orders Processed", value: "2.5M+" },
-      { label: "Uptime Reliability", value: "99.98%" },
-      { label: "Kitchen Ticket Time Reduction", value: "32%" },
-      { label: "Multi-Outlet Support", value: "500+ Hubs" }
+      { label: "Order Ingestion", value: "Real-Time" },
+      { label: "Station Routing", value: "Automated KDS" },
+      { label: "Supply Chain", value: "Recipe Depletion" },
+      { label: "Architecture", value: "Cloud-Native" }
     ],
     screenshots: [
       { caption: "Operations Command Center", url: "/images/products/tiffzy-dashboard.png" },
@@ -160,7 +160,7 @@ export const PRODUCTS_DATA: Product[] = [
     tagline: "High-Engagement Community Platform & Next-Gen Social Networking System",
     category: "Social Media & Community Platforms",
     shortDescription: "A real-time, low-latency social networking engine engineered for verified communities, rich multimedia feeds, short-form video streaming, and encrypted messaging.",
-    fullDescription: "SocialSea is Survetra's modern social platform designed to redefine authentic digital connections. Built upon a distributed event-driven microservices architecture, SocialSea features intelligent interest-graph recommendation algorithms, high-throughput short video delivery, end-to-end encrypted direct messaging, ephemeral story feeds, and purpose-driven community spaces.",
+    fullDescription: "SocialSea is Survetra's modern social platform designed to redefine authentic digital connections. Built upon a distributed event-driven microservices architecture, SocialSea features intelligent interest-graph recommendation algorithms, short video delivery, end-to-end encrypted direct messaging, ephemeral story feeds, and purpose-driven community spaces.",
     status: "Beta",
     badge: "Consumer Platform",
     features: [
@@ -169,7 +169,7 @@ export const PRODUCTS_DATA: Product[] = [
         description: "Personalized content curation powered by graph-based vector embeddings, ensuring relevant, safe, and engaging feed experiences."
       },
       {
-        title: "Ultra-Low-Latency Short Videos",
+        title: "Adaptive Short Videos",
         description: "Adaptive HLS/DASH video streaming, in-app video editing, sound overlay syncing, and optimized mobile GPU rendering."
       },
       {
@@ -191,10 +191,10 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     techStack: ["Next.js", "React Native", "Go", "Spring Boot", "Cassandra", "PostgreSQL", "AWS S3 / CloudFront", "WebRTC"],
     metrics: [
-      { label: "Peak Message Throughput", value: "45K msg/sec" },
-      { label: "P99 Feed Latency", value: "< 42ms" },
-      { label: "Active Beta Communities", value: "1,200+" },
-      { label: "Video Start Time", value: "< 280ms" }
+      { label: "Feed Engine", value: "Graph-Based" },
+      { label: "Media Pipeline", value: "Adaptive HLS" },
+      { label: "Messaging", value: "WebRTC / WSS" },
+      { label: "Architecture", value: "Microservices" }
     ],
     screenshots: [
       { caption: "SocialSea Feed & Discovery", url: "/images/products/socialsea-feed.png" },
@@ -229,9 +229,9 @@ export const PRODUCTS_DATA: Product[] = [
     ],
     techStack: ["Python", "Java 17", "LangGraph", "pgvector", "Spring AI", "Docker", "Ollama / Bedrock"],
     metrics: [
-      { label: "Target Agent Accuracy", value: "99.4%" },
-      { label: "Supported Connectors", value: "40+ APIs" },
-      { label: "Audit Traceability", value: "100%" }
+      { label: "Reasoning Engine", value: "Hybrid Vector" },
+      { label: "Tool Execution", value: "Deterministic" },
+      { label: "Data Safeguards", value: "Zero Retention" }
     ]
   }
 ];
@@ -260,7 +260,7 @@ export const SERVICES_DATA: Service[] = [
     ],
     techStack: ["PyTorch", "TensorFlow", "Scikit-Learn", "Kubeflow", "MLflow", "FastAPI", "Python"],
     businessImpact: [
-      "Automate manual verification workflows by up to 85%",
+      "Automate manual verification workflows and eliminate repetitive tasks",
       "Predict customer churn and inventory demand with high precision",
       "Accelerate speed-to-insight from weeks to sub-second queries"
     ]
@@ -289,7 +289,7 @@ export const SERVICES_DATA: Service[] = [
     techStack: ["OpenAI API", "Anthropic Claude", "Llama 3", "vLLM", "Hugging Face", "Ollama", "Triton"],
     businessImpact: [
       "Enable automated intelligent document synthesis",
-      "Reduce customer support ticket handling times by 60%",
+      "Significantly accelerate customer support ticket resolution",
       "Protect intellectual property with zero-data-leakage architectures"
     ]
   },
@@ -372,7 +372,7 @@ export const SERVICES_DATA: Service[] = [
     ],
     techStack: ["React Native", "Flutter", "Swift", "Kotlin", "Expo", "Fastlane", "SQLite"],
     businessImpact: [
-      "Unified single codebase reducing mobile development overhead by 40%",
+      "Unified single codebase streamlining mobile development overhead across platforms",
       "Consistent 60–120 FPS render performance across diverse device tiers",
       "Flawless offline operation in areas with intermittent connectivity"
     ]
@@ -401,7 +401,7 @@ export const SERVICES_DATA: Service[] = [
     techStack: ["Java 17/21", "Spring Boot", "Go", "PostgreSQL", "Kafka", "Redis", "gRPC"],
     businessImpact: [
       "Handle massive traffic spikes without service degradation",
-      "Achieve 99.99% service availability with automated health checks",
+      "High-availability service resilience with automated health checks and failovers",
       "Maintain ACID data guarantees across critical financial workflows"
     ]
   },
@@ -466,7 +466,7 @@ export const SERVICES_DATA: Service[] = [
     slug: "payment-integrations",
     title: "Payment Integrations & FinTech",
     category: "Enterprise & Business",
-    shortDescription: "Secure payment gateway integrations, multi-currency checkout, escrow wallets, and PCI-DSS compliant workflows.",
+    shortDescription: "Secure payment gateway integrations, multi-currency checkout, escrow wallets, and robust tokenized transaction workflows.",
     fullDescription: "From dynamic restaurant bill splitting to digital wallet ecosystems and recurring global subscription billing, Survetra builds bulletproof financial technology integrations with strict idempotency, fraud detection, and reconciliation automation.",
     iconName: "CreditCard",
     capabilities: [
@@ -474,7 +474,7 @@ export const SERVICES_DATA: Service[] = [
       "Proprietary Digital Wallet & Ledger Architecture",
       "Automated Multi-Party Split Payments & Payouts",
       "Idempotent Webhook Processing & Reconciliation",
-      "PCI-DSS Level 1 Architectural Compliance"
+      "Security-First Tokenization & Encryption Architecture"
     ],
     deliverables: [
       "Secure payment checkout UI and tokenization flows",
@@ -564,9 +564,9 @@ export const INDUSTRIES_DATA: Industry[] = [
     ],
     featuredProducts: ["Tiffzy"],
     impactHighlights: [
-      { label: "Kitchen prep time reduction", value: "32%" },
-      { label: "Table turnover acceleration", value: "24%" },
-      { label: "Inventory shrinkage decrease", value: "18%" }
+      { label: "Order Pipeline", value: "Real-Time Sync" },
+      { label: "Station Routing", value: "Automated Flow" },
+      { label: "Inventory Model", value: "Recipe Depletion" }
     ]
   },
   {
@@ -574,19 +574,19 @@ export const INDUSTRIES_DATA: Industry[] = [
     slug: "financial-technology",
     name: "Financial Technology & Payments",
     tagline: "High-security financial backends, payment orchestration, and ledger systems",
-    description: "We build compliant, idempotent financial software that handles millions of transactions with zero margin for error, supporting multi-gateway routing, digital wallets, and automated reconciliation.",
+    description: "We build compliant, idempotent financial software that handles high transaction volumes with zero margin for error, supporting multi-gateway routing, digital wallets, and automated reconciliation.",
     iconName: "Landmark",
     keySolutions: [
-      "PCI-DSS Compliant Multi-Gateway Payment Routing",
+      "Secure Multi-Gateway Payment Routing & Tokenization",
       "Double-Entry General Ledger Core Systems",
       "Automated Real-Time Fraud & Anomaly Detection",
       "Digital Wallets & Stored-Value Accounts",
       "Automated Regulatory & Tax Reporting"
     ],
     impactHighlights: [
-      { label: "Transaction uptime", value: "99.99%" },
-      { label: "Settlement processing speed", value: "< 2.5s" },
-      { label: "Chargeback dispute reduction", value: "45%" }
+      { label: "Transaction Safety", value: "Idempotent State" },
+      { label: "Payment Routing", value: "Multi-Gateway" },
+      { label: "Audit Ledger", value: "Double-Entry" }
     ]
   },
   {
@@ -604,9 +604,9 @@ export const INDUSTRIES_DATA: Industry[] = [
       "Enterprise Data Warehousing & Analytics"
     ],
     impactHighlights: [
-      { label: "Process automation rate", value: "70%" },
-      { label: "Infrastructure spend optimization", value: "35%" },
-      { label: "Release frequency increase", value: "8x" }
+      { label: "Infrastructure", value: "Cloud-Native" },
+      { label: "Integration", value: "Event-Driven" },
+      { label: "Access Control", value: "Role-Based IAM" }
     ]
   },
   {
@@ -614,7 +614,7 @@ export const INDUSTRIES_DATA: Industry[] = [
     slug: "social-and-digital-platforms",
     name: "Social & Digital Platforms",
     tagline: "High-throughput community applications and low-latency interactive media",
-    description: "Architecting interactive digital consumer platforms with distributed social graphs, low-latency video streaming, real-time messaging, and creator monetization.",
+    description: "Architecting interactive digital consumer platforms with distributed social graphs, adaptive video streaming, real-time messaging, and creator monetization.",
     iconName: "Share2",
     keySolutions: [
       "Distributed Social Graph & Feed Recommendations",
@@ -625,9 +625,9 @@ export const INDUSTRIES_DATA: Industry[] = [
     ],
     featuredProducts: ["SocialSea"],
     impactHighlights: [
-      { label: "Daily active interactions", value: "10M+" },
-      { label: "P99 Feed query response", value: "< 45ms" },
-      { label: "Toxic content auto-flagging", value: "99.2%" }
+      { label: "Feed Delivery", value: "Vector Graph" },
+      { label: "Media Engine", value: "Adaptive HLS" },
+      { label: "Messaging", value: "Encrypted P2P" }
     ]
   },
   {
@@ -645,29 +645,29 @@ export const INDUSTRIES_DATA: Industry[] = [
       "Cold-Chain & Environmental Sensor Ingestion"
     ],
     impactHighlights: [
-      { label: "Fuel & transit cost savings", value: "22%" },
-      { label: "On-time delivery performance", value: "98.7%" },
-      { label: "Stockout event reduction", value: "40%" }
+      { label: "Fleet Telemetry", value: "Real-Time GPS" },
+      { label: "Route Planning", value: "Dynamic Dispatch" },
+      { label: "Stock Monitoring", value: "Threshold Triggers" }
     ]
   },
   {
     id: "ind-healthcare",
     slug: "healthcare-technology",
     name: "Healthcare & Life Sciences",
-    tagline: "Secure, HIPAA-compliant patient experiences and intelligent clinical data systems",
-    description: "Engineering secure digital health applications, telemedicine platforms, and patient engagement portals with strict adherence to medical privacy and data protection standards.",
+    tagline: "Secure patient experiences and intelligent clinical data systems",
+    description: "Engineering secure digital health applications, telemedicine platforms, and patient engagement portals with strict adherence to data protection standards.",
     iconName: "Activity",
     keySolutions: [
-      "HIPAA-Compliant Patient Portals & Telehealth",
+      "Secure Patient Portals & Telehealth Integrations",
       "Secure Electronic Health Record (EHR) Integrations",
       "Clinical Trial Enrollment & Survey Pipelines",
       "Diagnostic Image Archival & Processing",
       "Predictive Patient Appointment Scheduling"
     ],
     impactHighlights: [
-      { label: "Patient check-in wait time drop", value: "50%" },
-      { label: "Data privacy compliance score", value: "100%" },
-      { label: "Telehealth session stability", value: "99.9%" }
+      { label: "Data Architecture", value: "Security-First" },
+      { label: "Record Linking", value: "Secure EHR" },
+      { label: "Telehealth Media", value: "Encrypted WebRTC" }
     ]
   }
 ];
@@ -676,75 +676,69 @@ export const CASE_STUDIES_DATA: CaseStudy[] = [
   {
     id: "cs-1",
     slug: "scaling-cloud-kitchen-operations-with-tiffzy",
-    title: "Transforming 80+ Cloud Kitchen Outlets into an Automated High-Volume Network",
-    clientName: "Apex Culinary Group",
+    title: "Event-Driven Kitchen Display & Multi-Station Routing Architecture",
+    clientName: "Architecture Blueprint",
     industry: "Food & Restaurant Technology",
-    challenge: "Apex Culinary operated 80+ virtual kitchen hubs across 6 metropolitan cities. Disparate POS terminals, manual inventory spreadsheets, and disconnected delivery drivers caused frequent order errors, high ingredient shrinkage (14%), and average kitchen ticket times exceeding 28 minutes during peak rushes.",
-    solution: "Survetra deployed the Tiffzy ecosystem across all locations. We unified digital ordering channels into an intelligent Kitchen Display System (KDS), implemented automated recipe-level ingredient depletion, and linked regional suppliers to automated restocking thresholds.",
+    challenge: "High-volume commercial kitchens require synchronized multi-station order routing, recipe ingredient depletion tracking, and real-time status synchronization under peak meal rush loads without ticket loss or print server failures.",
+    solution: "Survetra engineered a distributed state machine using Java 17 and Spring Boot with Kafka event streams and Redis caching, partitioning orders into parallel station tickets and providing local offline buffering.",
     results: [
-      "Reduced average kitchen ticket prep time from 28 mins to 17 mins (-39%)",
-      "Decreased monthly food wastage and inventory shrinkage by 65%",
-      "Processed over 1.8M orders in the first 6 months with 99.98% platform uptime",
-      "Eliminated manual reconciliation with automated multi-channel financial settlement"
+      "Partitioned ticket routing across discrete kitchen prep stations",
+      "Automated recipe-level ingredient inventory depletion tracking",
+      "Decoupled order ingestion from display rendering via append-only Kafka logs",
+      "Offline-first client buffering ensuring uninterrupted station operation"
     ],
     metrics: [
-      { label: "Ticket Prep Time", value: "-39%" },
-      { label: "Food Wastage Saved", value: "$420K" },
-      { label: "Orders Handled", value: "1.8M+" },
-      { label: "System Availability", value: "99.98%" }
+      { label: "State Engine", value: "Event-Driven" },
+      { label: "Log Durability", value: "Append-Only" },
+      { label: "Offline Support", value: "Local Cache" },
+      { label: "Consistency", value: "Transactional" }
     ],
-    testimonialQuote: "Tiffzy transformed our entire operational reality. What used to be chaotic dinner rush ticket mismanagement is now a calm, automated kitchen assembly line.",
-    testimonialAuthor: "Marcus Vance, Chief Operating Officer, Apex Culinary Group",
     technologiesUsed: ["Spring Boot", "Next.js", "PostgreSQL", "Redis", "Kafka", "Docker"],
     coverGradient: "from-amber-500/20 via-orange-600/10 to-transparent"
   },
   {
     id: "cs-2",
     slug: "distributed-streaming-architecture-for-socialsea",
-    title: "Architecting a Sub-50ms Global Social Feed for Millions of Active Community Members",
-    clientName: "SocialSea Network",
+    title: "Distributed Microservices Architecture for Low-Latency Community Feeds",
+    clientName: "Architecture Blueprint",
     industry: "Social & Digital Platforms",
-    challenge: "Social platforms face extreme data velocity. SocialSea required a media ingestion and feed distribution engine capable of handling tens of thousands of video uploads per hour while maintaining sub-50ms query response times and instant real-time reactions.",
-    solution: "Survetra architected a hybrid event-driven microservices topology using Go and Java/Spring Boot, with Cassandra for persistent timeline storage, Redis for fast-access caching, and an automated multi-bitrate HLS encoding pipeline backed by AWS CloudFront.",
+    challenge: "Interactive social applications require high-throughput media ingestion, graph-based feed generation, and low-latency real-time notifications capable of handling rapid engagement spikes without system bottlenecks.",
+    solution: "Survetra designed a decoupled microservices topology using Go and Spring Boot, utilizing Cassandra for scalable timeline storage, Redis for feed caching, and adaptive HLS video streaming.",
     results: [
-      "Maintained P99 feed generation latency below 42ms worldwide",
-      "Scaled to 45,000 active concurrent WebSocket messaging connections",
-      "Reduced video transcoding costs by 48% via intelligent GPU spot clusters",
-      "Zero data loss during peak viral spike events"
+      "Decoupled asynchronous media processing pipeline with adaptive transcoding",
+      "Distributed timeline fan-out architecture using in-memory caching",
+      "WebSocket and WebRTC infrastructure for bidirectional real-time communication",
+      "Optimized database query patterns eliminating read hot-spots"
     ],
     metrics: [
-      { label: "P99 Feed Latency", value: "< 42ms" },
-      { label: "Concurrent Connections", value: "45K+" },
-      { label: "Transcoding Savings", value: "48%" },
-      { label: "Data Loss Incidents", value: "0" }
+      { label: "Architecture", value: "Microservices" },
+      { label: "Media Streaming", value: "Adaptive HLS" },
+      { label: "Real-Time Protocol", value: "WebSocket / RTC" },
+      { label: "Timeline Store", value: "Distributed" }
     ],
-    testimonialQuote: "The engineering team at Survetra delivered an infrastructure that effortlessly shrugs off viral traffic spikes without breaking a sweat.",
-    testimonialAuthor: "Elena Rostova, VP of Infrastructure, SocialSea Platform",
     technologiesUsed: ["Go", "Spring Boot", "Cassandra", "Redis", "AWS CloudFront", "WebRTC"],
     coverGradient: "from-violet-600/20 via-purple-800/10 to-transparent"
   },
   {
     id: "cs-3",
     slug: "enterprise-cloud-modernization-financial-services",
-    title: "Migrating a Legacy Core Banking Portal to an Event-Driven Cloud Platform",
-    clientName: "Horizon Capital Partners",
+    title: "Enterprise Portal Modernization & Cloud-Native Migration Blueprint",
+    clientName: "Architecture Blueprint",
     industry: "Financial Technology",
-    challenge: "Horizon Capital was encumbered by a 14-year-old monolithic Java EE system running on physical on-premise servers. Deployments required 6-hour maintenance downtime windows, and reporting queries routinely locked operational tables.",
-    solution: "Survetra designed a phased strangler-fig migration strategy. We decomposed the monolith into containerized Spring Boot microservices orchestrated on AWS EKS, introduced Apache Kafka for asynchronous transaction journaling, and migrated the database to PostgreSQL with read replicas.",
+    challenge: "Monolithic legacy application stacks with tightly coupled databases often face deployment fragility, prolonged release cycles, and difficult horizontal scaling.",
+    solution: "Survetra implemented a strangler-fig modernization pattern, systematically extracting domain boundaries into containerized Spring Boot microservices on Kubernetes, backed by automated CI/CD pipelines and infrastructure as code.",
     results: [
-      "Achieved 100% zero-downtime continuous deployments via blue-green releases",
-      "Decreased end-of-day financial reconciliation batch time from 4.5 hours to 18 minutes",
-      "Reduced annual infrastructure and licensing overhead by 52%",
-      "Passed rigorous financial security audits without a single non-conformance flag"
+      "Decomposed legacy monolith into modular, independently deployable services",
+      "Implemented automated blue-green continuous delivery pipelines",
+      "Standardized infrastructure provisioning using declarative Infrastructure as Code",
+      "Established comprehensive distributed tracing, observability, and audit logging"
     ],
     metrics: [
-      { label: "Deployment Downtime", value: "0 min" },
-      { label: "Reconciliation Speed", value: "15x Faster" },
-      { label: "Infra Cost Reduction", value: "52%" },
-      { label: "Security Audit Score", value: "100%" }
+      { label: "Deployment Model", value: "Blue-Green" },
+      { label: "Infrastructure", value: "Declarative IaC" },
+      { label: "Service Mesh", value: "Containerized" },
+      { label: "Audit Logging", value: "Comprehensive" }
     ],
-    testimonialQuote: "Survetra executed the migration without a single minute of customer-facing outage. Their technical rigor is extraordinary.",
-    testimonialAuthor: "Devon Reed, Chief Technology Officer, Horizon Capital",
     technologiesUsed: ["Java 17", "Spring Boot", "AWS EKS", "Apache Kafka", "PostgreSQL", "Terraform"],
     coverGradient: "from-blue-600/20 via-indigo-900/10 to-transparent"
   }
@@ -752,41 +746,13 @@ export const CASE_STUDIES_DATA: CaseStudy[] = [
 
 export const LEADERSHIP_DATA: TeamMember[] = [
   {
-    id: "lead-1",
-    name: "Vikramaditya Sharma",
-    role: "Chief Executive Officer & Founder",
+    id: "lead-suresh-babu",
+    name: "Suresh Babu",
+    role: "Executive Leadership & Management",
     category: "Executive Leadership",
-    bio: "Technologist and entrepreneur with over 16 years of leadership experience building scalable software products and driving enterprise digital transformations across global markets.",
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-    linkedinUrl: "https://linkedin.com",
-    twitterUrl: "https://twitter.com"
-  },
-  {
-    id: "lead-2",
-    name: "Sarah Jenkins",
-    role: "Chief Technology Officer",
-    category: "Executive Leadership",
-    bio: "Former principal distributed systems architect with extensive expertise in high-concurrency event-driven backends, cloud-native infrastructure, and enterprise AI systems.",
-    avatarUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-    linkedinUrl: "https://linkedin.com"
-  },
-  {
-    id: "lead-3",
-    name: "Arjun Nair",
-    role: "VP of Product Engineering",
-    category: "Technology & Engineering",
-    bio: "Leads engineering delivery across Survetra's product ecosystem, focusing on architectural resilience, CI/CD automation, and high-velocity engineering cultures.",
-    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    linkedinUrl: "https://linkedin.com"
-  },
-  {
-    id: "lead-4",
-    name: "Claire Moreau",
-    role: "Head of Product Design & UX",
-    category: "Product & Design",
-    bio: "Pioneers human-centered design systems, design tokens, and immersive multi-platform user journeys across our enterprise and consumer product portfolios.",
-    avatarUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-    linkedinUrl: "https://linkedin.com"
+    bio: "Executive leadership guiding corporate strategy, enterprise partnerships, and operational delivery across Survetra Services and our proprietary technology platforms.",
+    avatarUrl: "/images/team/suresh-babu.svg",
+    linkedinUrl: "https://www.linkedin.com/company/survetra-services"
   }
 ];
 
@@ -832,7 +798,7 @@ export const JOBS_DATA: JobOpening[] = [
       "Design, implement, and maintain Java 17/21 microservices using Spring Boot 3.",
       "Optimize PostgreSQL relational queries, indexing, and Flyway database migrations.",
       "Implement event-driven streaming pipelines using Apache Kafka and Redis.",
-      "Ensure 99.99% system availability through automated testing, monitoring, and tracing."
+      "Ensure high system availability through automated testing, monitoring, and tracing."
     ],
     requirements: [
       "5+ years of production experience with Java, Spring Boot, Spring Security, and Hibernate/JPA.",
@@ -882,12 +848,12 @@ export const ARTICLES_DATA: Article[] = [
     id: "art-1",
     slug: "engineering-sub-second-kitchen-ticket-routing-tiffzy",
     title: "Engineering Sub-Second Kitchen Ticket Routing in High-Volume Restaurant Networks",
-    excerpt: "How we designed an event-driven state machine in Tiffzy to orchestrate high-throughput kitchen display routing across 500+ commercial kitchens.",
+    excerpt: "How we designed an event-driven state machine in Tiffzy to orchestrate high-throughput kitchen display routing across high-volume restaurant networks.",
     category: "Architecture",
     readTime: "6 min read",
     publishedDate: "October 24, 2026",
-    authorName: "Sarah Jenkins",
-    authorRole: "Chief Technology Officer",
+    authorName: "Survetra Architecture Group",
+    authorRole: "Systems Engineering",
     tags: ["Distributed Systems", "Spring Boot", "Kafka", "Restaurant Tech"],
     content: `
 Modern commercial kitchens operate in environments of relentless temporal pressure. When a customer taps 'Submit Order' on a tabletop QR interface or third-party delivery dispatch, that transaction must undergo validation, inventory allocation, split-payment confirmation, and station-specific routing—all within hundreds of milliseconds.
@@ -923,8 +889,8 @@ By decoupling order ingestion from screen display rendering using durable Kafka 
     category: "AI & Innovation",
     readTime: "8 min read",
     publishedDate: "November 02, 2026",
-    authorName: "Vikramaditya Sharma",
-    authorRole: "Chief Executive Officer & Founder",
+    authorName: "Survetra Engineering Team",
+    authorRole: "AI & Innovation Labs",
     tags: ["Artificial Intelligence", "Autonomous Agents", "Enterprise RAG", "Security"],
     content: `
 Large Language Models excel at syntactic fluency, semantic summarization, and creative reasoning. However, when applied to enterprise tasks—such as executing financial refunds, modifying supply chain orders, or granting access permissions—raw probabilistic generation is fundamentally unsuitable without deterministic guardrails.
@@ -942,19 +908,19 @@ The model receives the user's objective, contextual documents retrieved via hybr
 Before any tool is executed, the proposed payload is strictly validated against JSON Schemas and domain invariants. If a field fails validation or exceeds authorized transaction limits, the execution halts immediately.
 
 3. **Audit Ledger & Verification (Compliance Layer):**
-Every input, reasoning trace, tool invocation, and returned response is persisted to an immutable cryptographic audit log. This provides 100% auditability for regulatory compliance.
+Every input, reasoning trace, tool invocation, and returned response is persisted to an immutable cryptographic audit log. This provides complete auditability for regulatory compliance.
     `
   },
   {
     id: "art-3",
     slug: "optimizing-core-web-vitals-nextjs-14",
-    title: "Squeezing Every Millisecond: Next.js Architecture for 99+ Core Web Vitals",
+    title: "Squeezing Every Millisecond: Next.js Architecture for Exceptional Core Web Vitals",
     excerpt: "Practical architectural strategies for achieving near-perfect Lighthouse scores and sub-second Largest Contentful Paint across enterprise web applications.",
     category: "Engineering",
     readTime: "5 min read",
     publishedDate: "November 10, 2026",
-    authorName: "Claire Moreau",
-    authorRole: "Head of Product Design & UX",
+    authorName: "Survetra Design Studio",
+    authorRole: "Frontend & UX Practice",
     tags: ["Next.js", "Performance", "Frontend", "Web Vitals"],
     content: `
 Performance is not a cosmetic enhancement; it is a core commercial metric. Studies consistently show that every 100ms decrease in page load speed translates directly into higher conversion rates, improved search engine indexing, and lower bounce rates.
@@ -977,8 +943,8 @@ export const COMPANY_INFO = {
   description: "Survetra Services builds intelligent digital products, scalable software platforms and technology solutions that help businesses move forward.",
   foundedYear: "2024",
   headquarters: "Bengaluru, Karnataka, India",
-  email: "contact@survetra.com",
-  phone: "+91 (80) 4120-8900",
+  email: "sureshbabu@survetra.com",
+  phone: "+91 77776 4632",
   businessHours: "Monday - Friday: 9:00 AM - 6:00 PM IST",
   socialLinks: {
     linkedin: "https://www.linkedin.com/company/survetra-services",

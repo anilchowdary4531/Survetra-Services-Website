@@ -101,7 +101,7 @@ public class FormDtos {
         private long publishedProjects;
         private long activeJobs;
         private long publishedArticles;
-        private String platformSla = "99.98%";
+        private String platformSla = "Operational";
 
         public DashboardStatsDto() {}
 
@@ -112,7 +112,7 @@ public class FormDtos {
             this.publishedProjects = publishedProjects;
             this.activeJobs = activeJobs;
             this.publishedArticles = publishedArticles;
-            this.platformSla = "99.98%";
+            this.platformSla = "Operational";
         }
 
         public long getTotalEnquiries() { return totalEnquiries; }

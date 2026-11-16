@@ -62,7 +62,7 @@ export default function HeroVisual() {
               <span className="text-xs font-semibold text-white">Tiffzy Suite</span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
             </div>
-            <span className="text-[10px] text-slate-400">2.5M+ Orders Handled</span>
+            <span className="text-[10px] text-slate-400">Restaurant Ecosystem</span>
           </div>
         </div>
       </motion.div>
@@ -80,11 +80,11 @@ export default function HeroVisual() {
           <div>
             <div className="flex items-center gap-1.5">
               <span className="text-xs font-semibold text-white">SocialSea Mesh</span>
-              <span className="text-[9px] px-1 rounded bg-violet-500/20 text-violet-300 font-mono">
-                &lt;42ms
+              <span className="text-[9px] px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-300 font-mono">
+                Beta
               </span>
             </div>
-            <span className="text-[10px] text-slate-400">45K msg/s Stream</span>
+            <span className="text-[10px] text-slate-400">Community Platform</span>
           </div>
         </div>
       </motion.div>
@@ -99,7 +99,7 @@ export default function HeroVisual() {
           <Sparkles className="w-4 h-4 text-amber-400" />
           <div>
             <div className="text-[11px] font-semibold text-white">AI Agent Mesh</div>
-            <div className="text-[9px] text-emerald-400 font-mono">Deterministic 99.4%</div>
+            <div className="text-[9px] text-emerald-400 font-mono">Verified Execution</div>
           </div>
         </div>
       </motion.div>
@@ -114,7 +114,7 @@ export default function HeroVisual() {
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
           <div>
             <div className="text-[11px] font-semibold text-white">Zero Trust Core</div>
-            <div className="text-[9px] text-slate-400">ISO & SOC Certified</div>
+            <div className="text-[9px] text-slate-400">Security-First Architecture</div>
           </div>
         </div>
       </motion.div>

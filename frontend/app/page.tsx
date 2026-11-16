@@ -98,22 +98,22 @@ export default async function HomePage() {
               {/* Trust Indicators / Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/[0.08] max-w-lg mx-auto lg:mx-0 text-left">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
-                    99.98<span className="text-survetra-orange">%</span>
+                  <div className="text-xl sm:text-2xl font-display font-bold text-white tracking-tight">
+                    Full-Stack
                   </div>
-                  <div className="text-xs text-slate-400 mt-1">Platform SLA</div>
+                  <div className="text-xs text-slate-400 mt-1">Engineering Rigor</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
-                    2.5M<span className="text-survetra-violet">+</span>
+                  <div className="text-xl sm:text-2xl font-display font-bold text-white tracking-tight">
+                    Cloud-Native
                   </div>
-                  <div className="text-xs text-slate-400 mt-1">Orders Handled</div>
+                  <div className="text-xs text-slate-400 mt-1">Modern Architecture</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
-                    &lt; 50<span className="text-survetra-orange">ms</span>
+                  <div className="text-xl sm:text-2xl font-display font-bold text-white tracking-tight">
+                    Security-First
                   </div>
-                  <div className="text-xs text-slate-400 mt-1">P99 Query Latency</div>
+                  <div className="text-xs text-slate-400 mt-1">Enterprise Standards</div>
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ export default async function HomePage() {
                     <UtensilsCrossed className="w-6 h-6" />
                   </div>
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    Production Ecosystem
+                    Active Product
                   </span>
                 </div>
 
@@ -282,7 +282,7 @@ export default async function HomePage() {
                     <Share2 className="w-6 h-6" />
                   </div>
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                    Active Beta Platform
+                    Beta Platform
                   </span>
                 </div>
 
@@ -306,7 +306,7 @@ export default async function HomePage() {
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-survetra-violet" />
-                    Sub-280ms Short Videos
+                    Adaptive Short Videos
                   </div>
                   <div className="flex items-center gap-2 text-xs text-slate-300">
                     <CheckCircle2 className="w-3.5 h-3.5 text-survetra-violet" />
@@ -515,7 +515,7 @@ export default async function HomePage() {
                       {study.industry}
                     </span>
                     <span className="text-xs font-mono text-slate-500">
-                      Client: {study.clientName}
+                      {study.clientName}
                     </span>
                   </div>
 
@@ -542,14 +542,14 @@ export default async function HomePage() {
                 </div>
 
                 <div className="pt-8 mt-8 border-t border-white/[0.06] flex items-center justify-between">
-                  <span className="text-xs text-slate-400 italic max-w-sm line-clamp-1">
-                    "{study.testimonialQuote}"
+                  <span className="text-xs text-slate-400 font-mono max-w-sm line-clamp-1">
+                    {study.technologiesUsed.slice(0, 3).join(" • ")}
                   </span>
                   <Link
                     href={`/case-studies/${study.slug}`}
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-survetra-orange hover:text-survetra-orange-light transition-colors whitespace-nowrap"
                   >
-                    Read Full Story
+                    Explore Architecture
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

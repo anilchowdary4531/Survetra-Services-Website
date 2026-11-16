@@ -38,7 +38,7 @@ export default function InnovationPage() {
       category: "Distributed Systems",
       status: "Field Testing",
       badgeColor: "text-amber-400 border-amber-500/20 bg-amber-500/10",
-      description: "Custom zero-copy binary serialization protocols engineered for real-time order routing in Tiffzy and social graph timeline generation in SocialSea, reducing deserialization CPU overhead by over 70%.",
+      description: "Custom zero-copy binary serialization protocols engineered for real-time order routing in Tiffzy and social graph timeline generation in SocialSea, optimizing deserialization CPU efficiency.",
       pillars: [
         "Zero-allocation memory serialization buffers",
         "Predictable garbage collection profiling on modern JVMs",
